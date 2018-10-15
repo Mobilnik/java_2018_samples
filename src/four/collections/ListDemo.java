@@ -19,6 +19,7 @@ public class ListDemo {
         list.add("1");
         list.add("2");
         list.add("3");
+        list.add(null);//так тоже можно
 
         System.out.println(list.toString());
 

@@ -1,10 +1,11 @@
 package four.collections;
 
+import animals.Animal;
+
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
-public class HashCollisionDemo {
+public class BadHashDemo {
     public static void main(String[] args) {
         Book book1 = new Book("Kolobok", 10);
         Book book2 = new Book("War and peace", 1800);
@@ -13,7 +14,11 @@ public class HashCollisionDemo {
         bookMap.put(book1, book1);
         bookMap.put(book2, book2);
         bookMap.put(book3, book3);
-        System.out.println(bookMap);
+        for (Map.Entry<Book, Book> entry : bookMap.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue().toString());
+        }
+        System.out.println(bookMap.get(book1));//Репка
+
         System.out.println(bookMap.size());
     }
 }

@@ -7,9 +7,9 @@ import java.util.Map;
 
 public class MapDemo {
     public static void main(String[] args) {
-        //additionDemo();
+        additionDemo();
         //deletionDemo();
-        iterationDemo();
+        //iterationDemo();
     }
 
     private static void additionDemo() {
@@ -31,7 +31,7 @@ public class MapDemo {
         animalBySpecies.put(murka.getSpecies(), murka);
         animalBySpecies.put(bobik.getSpecies(), bobik);
         animalBySpecies.put(buryonka.getSpecies(), buryonka);
-        animalBySpecies.put(barsik.getSpecies(), barsik);
+        animalBySpecies.put(null, barsik);//так тоже можно, put for null value
         System.out.println(animalBySpecies.size());
         System.out.println(animalBySpecies.toString());
     }
@@ -65,7 +65,7 @@ public class MapDemo {
 
     private static void iterationDemo() {
         Map<String, Animal> animals = initAnimalsMap();
-        for(Map.Entry<String, Animal> entry : animals.entrySet()) {
+        for (Map.Entry<String, Animal> entry : animals.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue().toString());
         }
     }
