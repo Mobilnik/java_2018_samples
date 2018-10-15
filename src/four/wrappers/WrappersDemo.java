@@ -16,7 +16,6 @@ public class WrappersDemo {
         Integer minInt = Integer.MIN_VALUE;
 
         testMethod(maxInt);
-
     }
 
     private static void testMethod(Integer i){
