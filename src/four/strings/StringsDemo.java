@@ -17,5 +17,10 @@ public class StringsDemo {
 
         System.out.println(s.indexOf("cd"));//2
         System.out.println(s.indexOf('c')); //2
+
+        System.out.println("def" == "def");
+       // System.out.println(new String("def") == "def");
+       // System.out.println(new String("def") == new String("def"));
+       // System.out.println(new String("def").equals(new String("def")));
     }
 }
