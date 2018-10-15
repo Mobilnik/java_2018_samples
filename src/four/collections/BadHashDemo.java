@@ -1,7 +1,5 @@
 package four.collections;
 
-import animals.Animal;
-
 import java.util.HashMap;
 import java.util.Map;
 
