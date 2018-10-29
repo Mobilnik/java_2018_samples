@@ -9,7 +9,7 @@ create table users
 
 create table addresses
 (
-  id bigint     not null constraint users_pkey primary key,
+  id            bigint     not null constraint addresses_pkey primary key,
   address       varchar(100),
   city          varchar(30),
   postal_code   char(6)
