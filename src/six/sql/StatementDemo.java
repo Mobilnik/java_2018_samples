@@ -3,9 +3,10 @@ package six.sql;
 import java.sql.*;
 
 public class StatementDemo {
-    public static void main(String[] args) throws SQLException {
 
+    public static void main(String[] args) throws SQLException {
         Connection conn = null;
+        //пример с русскоязычной википедии
         try {
             Class.forName("org.postgresql.Driver");
 
