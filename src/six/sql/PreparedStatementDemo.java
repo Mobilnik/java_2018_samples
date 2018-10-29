@@ -4,7 +4,6 @@ import java.sql.*;
 
 public class PreparedStatementDemo {
 
-    @SuppressWarnings("unchecked")
     public static void main(String[] args) throws SQLException {
         Connection conn = null;
         try {
