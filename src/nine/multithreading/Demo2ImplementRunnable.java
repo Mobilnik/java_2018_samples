@@ -23,9 +23,11 @@ public class Demo2ImplementRunnable {
         Thread t1 = new Thread(new MyRunnable(100));
         Thread t2 = new Thread(() -> System.out.println("Hello from lambda."));
         Thread t3 = new Thread(() -> System.out.println("Hello from lambda 2."));
+
         t1.start();
         t2.start();
         t3.start();
+
         //а если так?
         //t1.start();
 
